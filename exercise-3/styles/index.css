@@ -1,6 +1,8 @@
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    margin: unset;
+    padding: unset;
 }
 
 .navigation ul {
@@ -12,9 +14,10 @@ body {
 .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
-.navigation  li.current {
+.navigation li.current {
     color: black;
     font-size: 18px;
     font-weight: 700;
@@ -26,6 +29,7 @@ body {
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height: 350px;
 }
 
 h1 {
@@ -37,11 +41,20 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    border-style: solid;
 }
 
 #main {
     padding: 40px;
     text-align: center;
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
 }
 
 h2 {
@@ -56,6 +69,10 @@ h3 {
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    border-style: dotted;
+    border-radius: 10px;
+    margin: 30px 20px;
+    padding: 20px 30px;
 }
 
 p {
@@ -63,10 +80,12 @@ p {
     color: grey;
     font-size: 16px;
     line-height: 1.5em;
+    margin-top: 40px;
 }
 
 .pull-quote {
-
+    width: 400px;
+    margin: 0 auto;
 }
 
 .byline {
@@ -92,10 +111,16 @@ p {
     color: white;
     display: inline-block;
     text-decoration: none;
+    padding: 14px;
+    margin: 10px;
 }
 
 .share a:hover {
     background: white;
     border: 1px solid red;
     color: red;
+}
+
+.global {
+    visibility: hidden;
 }
